@@ -1,6 +1,6 @@
-# Project: Airport board
+# Project: Airport board v.2
 
-### [Site link](https://inquisitive-cupcake-a17fab.netlify.app/)
+### [Site link](https://golden-froyo-be2bd2.netlify.app/)
 
 ( Created with *create-react-app* )
 
