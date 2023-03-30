@@ -1,16 +1,15 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import * as footerSelectors from './footer.selectors';
+import footerLinksData from './footerLinksData';
 import FooterLinksList from './FooterLinksList';
 
 import './footer.scss';
 
-function Footer({ linksData }) {
+export default function Footer() {
   return (
     <footer className="footer">
       <div className="container">
         <nav className="footer__navigation">
-          {linksData.map(linksData => (
+          {footerLinksData.map(linksData => (
             <FooterLinksList key={linksData.id} linksData={linksData} />
           ))}
           <div className="footer__contact-and-follow">
@@ -67,9 +66,3 @@ function Footer({ linksData }) {
     </footer>
   );
 }
-
-const mapState = state => ({
-  linksData: footerSelectors.footerLinksDataSelector(state),
-});
-
-export default connect(mapState, null)(Footer);
