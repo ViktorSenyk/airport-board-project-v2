@@ -1,7 +1,8 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import footerReducer from './footer/footer.reducer';
-import boardReducer from './board/board.reducer';
+import boardReducer from './components/board/board.reducer';
+import footerReducer from './components/footer/footer.reducer';
+
 
 const appReducer = combineReducers({
   board: boardReducer,

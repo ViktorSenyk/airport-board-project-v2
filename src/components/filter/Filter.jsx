@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 
-import '../styles/filter.scss';
+import './filter.scss';
 
 export default function Filter({ selectedDate, isDepartures, isDeparturesSet, selectedDateSet }) {
   const [selectedDay, selectedMonth] = selectedDate.split('-');

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import '../styles/search.scss';
+import './search.scss';
 
 export default function Search({ defaultValue, searchInfoSet }) {
   const [inputValue, setInputValue] = useState(defaultValue || '');

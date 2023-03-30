@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import * as footerSelectors from '../footer.selectors';
+import * as footerSelectors from './footer.selectors';
 import FooterLinksList from './FooterLinksList';
 
-import '../styles/footer.scss';
+import './footer.scss';
 
 function Footer({ linksData }) {
   return (

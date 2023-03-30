@@ -1,4 +1,4 @@
-import { getFlightsData } from './gateway/board';
+import { getFlightsData } from '../../gateway/flights';
 
 export const IS_DEPARTURES_SET = 'BOARD/IS_DEPARTURES_SET';
 export const SELECTED_DATE_SET = 'BOARD/SELECTED_DATE_SET';

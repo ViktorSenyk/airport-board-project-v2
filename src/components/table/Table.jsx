@@ -1,7 +1,7 @@
 import React from 'react';
 import TableRow from './TableRow';
 
-import '../styles/table.scss';
+import './table.scss';
 
 export default function Table({ filteredFlightsForDisplay }) {
   return (

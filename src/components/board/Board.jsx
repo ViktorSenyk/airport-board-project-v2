@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import * as boardSelectors from '../board.selectors';
+import * as boardSelectors from './board.selectors';
 import {
   fetchFlightsData,
   searchInfoSet,
   isDeparturesSet,
   selectedDateSet,
-} from '../board.actions';
-import Search from './Search';
-import Filter from './Filter';
-import Table from './Table';
+} from './board.actions';
+import Search from '../search/Search';
+import Filter from '../filter/Filter';
+import Table from '../table/Table';
 
 import { useSearchParams } from 'react-router-dom';
 
-import '../styles/board.scss';
+import './board.scss';
 
 function Board({
   isDepartures,
